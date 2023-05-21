@@ -11,7 +11,7 @@ def job(count,jmin,jmax):
         job_number = i
         job_type = rd.randrange(jmin,jmax+1)#난수 범위
         F_job.append([job_number,job_type])
-    columns = ['','job_type']
+    columns = ['','number']
     pd_F_job = pd.DataFrame(F_job, columns = columns)
     pd_F_job.to_csv('FJSP_Job.csv', index = False)
 
